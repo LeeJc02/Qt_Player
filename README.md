@@ -1,6 +1,8 @@
 # Qt_Player
 
 使用QT + C++搭建的一个基础的本地视频播放器, 基于qmake构建, Qt Creator实现
+
+
 ![image](https://github.com/LeeJc02/Qt_Player/assets/129182487/c9b9e036-0ec7-41e1-a179-f03d33bad91a)
 
 ---
@@ -19,5 +21,9 @@
 所有部件和对应快捷施法如图：
 ![a9a7431f37b846471a03b370098796c8](https://github.com/LeeJc02/Qt_Player/assets/129182487/df37692c-b6f2-47ee-bf4e-fe717bc16ae6)
 
-除上图所示外另新添功能：
-![image](https://github.com/LeeJc02/Qt_Player/assets/129182487/241a7923-6486-4526-ae6f-f01291e7d711)
+# 功能实现
+
+1. 一个窗体一个类，通过main.cpp文件调用窗口文件实现对窗口的打开调用
+2. 大体上来说通过keyPressEvent捕获键盘事件，触发各个按键的信号或者单独实现的槽函数，实现快捷键绑定
+3. 各个按键通过如clicked等信号与相对应的实现功能的槽函数相连接，实现按键响应
+
